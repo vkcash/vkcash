@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>OliCash.com - Кейсы с деньгами!</title>
+    <meta name="description" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами" />
+    <meta name="keywords" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами" />
+    <meta name="yandex-verification" content="96e122fd959bac2b" />
+    <link rel="stylesheet" href="../assets/css/stylee.css" />
+    <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core.js"></script>
+    <script type="text/javascript" src="../assets/js/app2.js"></script>
+    <script type="text/javascript" src="../assets/js/socket.io-1.4.5.js"></script>
+<script src="../assets/js/toastr.min.js">
+  </script>
+      <link rel="stylesheet" href="../assets/js/toastr.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <script>
+    var sockethost = 'https://olicash.com:2087';
+    var vkid = '1';
+    var salt = '1';
+
+
+        window.addEventListener('load', function() {
+      $("#nav-toggle").click(function(e) {
+        e.preventDefault();
+        $(".navmenu").toggleClass('show');
+      });
+      $('.payment-method').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+      });
+
+    });
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 6]><div class="ie6"><![endif]-->
+    <!--[if IE 7]><div class="ie7"><![endif]-->
+    <!--[if IE 8]><div class="ie8"><![endif]-->
+    <!--[if gt IE 8]><div class="ie9"><![endif]-->
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="../account/index.html"><img src="../assets/images/logo2.png" alt="кейсы с деньгами"></a>
+                </div>
+                <div class="u-menu">
+          
+            <a href="../auth/vk.html" style="color:inherit;text-decoration:none;">
+              <ul class="social-login" id="uLogin">
+                <li class="btn sexy gradient-blue icon-r flaticon-vk" data-uloginbutton="vkontakte"><b>Войти через</b> <span class="flaticon-soc-vk"></span></li>
+              </ul>
+            </a>
+            <div class="cls"></div>
+          
+                </div>
+<nav class="nav">
+  <div class="nav-button"><span class="flaticon-menu"></span></div>
+    <ul>
+	  
+      <li><a href="../account/index.html" class="eas active">Кейсы</a></li>
+      <li><a href="../faq.html" class="eas ">FAQ</a></li>
+      <li><a href="https://vk.com/olicash" class="eas ">Группа VK</a></li>
+      <li><a href="https://vk.com/topic-135338322_35108367" class="eas">Отзывы</a></li>
+	   
+    </ul>
+  </nav>
+                <div class="cls"></div>
+            </div>
+        </header>
+        <div class="sub-header">
+            <div class="inner">
+                <div class="stat">
+                    <div class="o o-1">Онлайн
+                        <div id="stat_online">73</div>
+                    </div>
+                    <div class="l"></div>
+                    <div class="o">Пользователей
+                        <div id="stat_users">15669</div>
+                    </div>
+                    <div class="l"></div>
+                    <div class="o">Открыто кейсов
+                        <div id="stat_opened">18699</div>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="live">
+                    <div class="name">Live призы</div>
+                    <div class="prize" id="live-prize-box">
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-5.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-1.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-25.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-25.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-10.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-1.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-1.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-15.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-10.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-20.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-10.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-5.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-20.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-25.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="../assets/images/cases/coin-20.svg">
+                          </div>
+                        
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="cls"></div>
+            </div>
+        </div>
+
+        <main class="content">
+   <div class="inner">
+      <div class="account">
+         <div class="userbox">
+            <div class="l">
+               <div class="userpic"><img src="https://pp.vk.me/c637520/v637520534/16eef/O4u061b6he0.jpg" alt="Антон Тюкачёв"></div>
+               <h1>Антон Тюкачёв <a href="https://vk.com/id24373534" target="_blank"><span class="flaticon-soc-vk"></span></a></h1>
+               <div class="u-cases"><span class="flaticon-case"></span> Кейсы: <span class="n">549</span></div>
+               <div class="u-money"><span class="flaticon-money"></span> Выигрыш: <span class="n">43379р</span></div>
+               
+            </div>
+            <div class="r">
+               <a href="../account/index.html" class="btn darkblue"><span class="flaticon-arrow-left"></span> назад к кейсам</a>
+            </div>
+            <div class="cls"></div>
+         </div>
+         <div class="seperator"></div>
+         <h3>Последние 30 призов</h3>
+         <div class="cls"></div>
+         <div class="history-cases">
+            <div class="cls"></div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-30.svg" alt="30">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-10.svg" alt="10">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-100.svg" alt="100">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-1.svg" alt="1">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-1.svg" alt="1">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-45.svg" alt="45">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-20.svg" alt="20">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-100.svg" alt="100">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-30.svg" alt="30">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-50.svg" alt="50">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-20.svg" alt="20">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-100.svg" alt="100">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/15.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-50.svg" alt="50">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-30.svg" alt="30">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-25.svg" alt="25">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-25.svg" alt="25">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-20.svg" alt="20">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-100.svg" alt="100">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-30.svg" alt="30">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-70.svg" alt="70">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-20.svg" alt="20">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-1.svg" alt="1">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-50.svg" alt="50">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-10.svg" alt="10">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-50.svg" alt="50">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-100.svg" alt="100">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/4.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-30.svg" alt="30">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-50.svg" alt="50">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-50.svg" alt="50">
+               </div>
+            </div>
+			
+			<div class="history-case">
+               <a href="../case/8.html" class="eas case-url">Кейс</a>
+               <div class="status"><span class="flaticon-check"></span></div>
+               <div class="coin silver">
+                  <img src="../assets/images/cases/coin-15.svg" alt="15">
+               </div>
+            </div>
+			
+            <div class="cls"></div>
+         </div>
+      </div>
+      <div class="seperator"></div>
+   </div>
+</main>
+ <footer class="footer">
+            <div class="inner">
+                <div class="l">
+                  <ul>
+                      <li><a href="../account/index.html" class="eas ">Кейсы</a></li>
+                      <li><a href="faq.html" class="eas ">FAQ</a></li>
+                      <li><a href="guaranties.html" class="eas ">Гарантии</a></li>
+                      <li><a href="https://vk.com/topic-135338322_35108367" class="eas ">Отзывы</a></li>
+                      <li><a href="support.html" class="eas active">Техническая поддержка</a></li>
+                  </ul>
+                   <div class="copy">
+Copyright © 2016 OliCash.com. Все права защищены.<br>Авторизуясь на сайте вы принимаете <a href="../tos.html">пользовательское соглашение</a>
+</div>
+                </div>
+                <div class="r">
+                    <p class="head-h5">Принимаем</p>
+                    <div class="cls"></div>
+                    <div class="img"><img src="../assets/images/payment-methods.png"></div>
+                    <div class="wm-box">
+                        <!-- begin WebMoney Transfer : accept label -->
+                        <a href="http://www.megastock.ru/" target="_blank"><img src="../assets/images/payment-wm-logo.png" class="wm wm-1" /></a>
+                        <!-- end WebMoney Transfer : accept label -->
+                        <!-- begin WebMoney Transfer : attestation label -->
+                        <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=" target="_blank"><img src="../assets/images/payment-wm-attestat.png" class="wm" style="position: absolute;bottom: 3px;left: -52px; width: 46px;" /></a>
+                        <!-- end WebMoney Transfer : attestation label -->
+                        <a href="https://www.free-kassa.ru/"><img src="../assets/images/payment-freekassa.png"></a>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="cls"></div>
+            </div>
+        </footer>
+    </div>
+    <!-- .wrapper -->
+    <div id="deposit" class="popup">
+      <form action="https://olicash.com/deposit">
+        <div class="popup-container">
+            <div class="eas close" onclick="popupClose('#deposit');"><span class="flaticon-close"></span></div>
+            <p class="head-h3">Пополнить баланс</p>
+            <div class="info">Вы можете пополнить баланс напрямую через WebMoney и Яндекс Деньги.<br> Если вы хотите пополнить баланс через QIWI, Банковские карты, мобильного оператора, терминал и так далее, пожалуйста, выберите Interkassa или Free-Kassa</div>
+            <p class="head-h4">Сумма</p>
+            <div class="cls"></div>
+            <div class="amount-l">
+             
+                    <input type="text" class="inp" id="depositbalance" maxlength="4" min="1" max="5000" value="100" name="b">
+                
+            </div>
+            <div class="amount-r">
+                Максимальная сумма за раз: <b>15000р</b><br>Минимальная сумма: <b>10р</b>
+            </div>
+            <div class="cls"></div>
+            <p class="head-h4">Выберите платежную систему</p>
+            <div class="cls"></div><span class="payment-method eas pm-webmoney active"><img src="../assets/images/payment-webmoney.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-yandex"><img src="../assets/images/payment-yandex.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-qiwi" onclick="changePaymentMethod('qiwi');"><img src="../assets/images/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+            <div class="cls"></div>
+            
+            <div class="foo"><input type="submit" class="btn orange rounded" value="Пополнить баланс" onclick="depositNow();"></div>
+        </div>
+        <div class="popup-overlay" onclick="popupClose('#deposit');"></div>
+    </form>
+    </div>
+    <div id="withdrawal" class="popup">
+      <form class="form-inline" role="form" style="text-align:center;" id="withdrawform">
+        <div class="popup-container">
+                <div class="loader"><img src="../assets/images/loader.svg"></div>
+                <div class="eas close" onclick="popupClose('#withdrawal');"><span class="flaticon-close"></span></div>
+                <p class="head-h3">Вывод средств</p>
+                <div class="info">Обработка вывода обычно осуществляется в течении часа.<br>В некоторых случаях платеж может быть обработан до 24 часов.<br>Минимальная сумма к выводу <b>100р</b></div>
+                <div class="cls"></div>
+                <div class="amount-l">
+                    <p class="head-h4">Сумма</p>
+                    <input type="text" name="amount" class="inp" maxlength="5" value="100" id="withdrawbalance">
+                    <input type="hidden" name="type" id="withdrawal-type-field" value="webmoney">
+                </div>
+                <div class="amount-r amount-r2">
+                    <p class="head-h4">Номер кошелька</p>
+                    <input type="text" name="purse" class="inp PurseHolder" maxlength="16" id="withdrawsystem" placeholder="Пример: R23884920195">
+                </div>
+                <div class="cls"></div>
+                <p class="head-h4">Куда хотите вывести?</p>
+                <div class="cls"></div>
+
+                <span class="payment-method eas pm-webmoney w-d active" data-v="webmoney"><img src="../assets/images/payment-webmoney.svg"><span class="flaticon-check"></span>
+                </span>
+
+                <span class="payment-method eas pm-yandex w-d" data-v="yandex"><img src="../assets/images/payment-yandex.svg"><span class="flaticon-check"></span></span>
+
+                <span class="payment-method eas pm-qiwi w-d" data-v="qiwi"><img src="../assets/images/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+
+                <div class="cls"></div>
+                <div class="foo foo-2"><input type="submit" class="btn blue rounded" value="Вывести средства" ></div>
+           
+        </div>
+        <div class="popup-overlay" onclick="popupClose('#withdrawal');"></div>
+        </form>
+    </div>
+    <div class="ie-update">
+        <p>Ваш браузер устарел :(</p>Пожалуйста, <a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie' rel='nofollow' target='_blank'>скачайте новую версию</a> Internet Explorer<br><small>Однако мы рекомендуем Google Chrome, Firefox и Safari. </small></div>
+    <!--[if IE]></div><![endif]--><a class="vk-button" href="https://vk.com/olicash" rel="nofollow" target="_blank"><span class="flaticon-soc-vk"></span> Мы Вконтакте</a>
+
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script>
+<script>!function(e,t,d,s,a,n,c){e[a]={},e[a].date=(new Date).getTime(),n=t.createElement(d),c=t.getElementsByTagName(d)[0],n.type="text/javascript",n.async=!0,n.src=s,c.parentNode.insertBefore(n,c)}(window,document,"script","https://olicashcom.push.world/embed.js","pw"),pw.websiteId="4ed6feb40b794f38d9452b301c026204604800afde77b7fd9c62fa3ed09d9421";</script>
+</body>
+
+</html>
+   

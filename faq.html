@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>OliCash.com - Кейсы с деньгами!</title>
+    <meta name="description" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами" />
+    <meta name="keywords" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами" />
+    <meta name="yandex-verification" content="96e122fd959bac2b" />
+    <link rel="stylesheet" href="assets/css/stylee.css" />
+    <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/core.js"></script>
+    <script type="text/javascript" src="assets/js/app2.js"></script>
+    <script type="text/javascript" src="assets/js/socket.io-1.4.5.js"></script>
+<script src="assets/js/toastr.min.js">
+  </script>
+      <link rel="stylesheet" href="assets/js/toastr.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <script>
+    var sockethost = 'https://olicash.com:2087';
+    var vkid = '1';
+    var salt = '1';
+
+
+        window.addEventListener('load', function() {
+      $("#nav-toggle").click(function(e) {
+        e.preventDefault();
+        $(".navmenu").toggleClass('show');
+      });
+      $('.payment-method').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+      });
+
+    });
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 6]><div class="ie6"><![endif]-->
+    <!--[if IE 7]><div class="ie7"><![endif]-->
+    <!--[if IE 8]><div class="ie8"><![endif]-->
+    <!--[if gt IE 8]><div class="ie9"><![endif]-->
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="account/index.html"><img src="assets/images/logo2.png" alt="кейсы с деньгами"></a>
+                </div>
+                <div class="u-menu">
+          
+            <a href="auth/vk.html" style="color:inherit;text-decoration:none;">
+              <ul class="social-login" id="uLogin">
+                <li class="btn sexy gradient-blue icon-r flaticon-vk" data-uloginbutton="vkontakte"><b>Войти через</b> <span class="flaticon-soc-vk"></span></li>
+              </ul>
+            </a>
+            <div class="cls"></div>
+          
+                </div>
+<nav class="nav">
+  <div class="nav-button"><span class="flaticon-menu"></span></div>
+    <ul>
+	  
+      <li><a href="account/index.html" class="eas active">Кейсы</a></li>
+      <li><a href="faq.html" class="eas ">FAQ</a></li>
+      <li><a href="https://vk.com/olicash" class="eas ">Группа VK</a></li>
+      <li><a href="https://vk.com/topic-135338322_35108367" class="eas">Отзывы</a></li>
+	   
+    </ul>
+  </nav>
+                <div class="cls"></div>
+            </div>
+        </header>
+        <div class="sub-header">
+            <div class="inner">
+                <div class="stat">
+                    <div class="o o-1">Онлайн
+                        <div id="stat_online">72</div>
+                    </div>
+                    <div class="l"></div>
+                    <div class="o">Пользователей
+                        <div id="stat_users">15669</div>
+                    </div>
+                    <div class="l"></div>
+                    <div class="o">Открыто кейсов
+                        <div id="stat_opened">18699</div>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="live">
+                    <div class="name">Live призы</div>
+                    <div class="prize" id="live-prize-box">
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-5.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-1.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-25.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-25.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-10.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-1.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-1.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-15.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-10.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-20.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-10.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-5.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-20.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-25.svg">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><div class="userpic"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                             </div>
+                             <img class="coin" src="assets/images/cases/coin-20.svg">
+                          </div>
+                        
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="cls"></div>
+            </div>
+        </div>
+        <main class="content">
+            <div class="inner">
+                <h1 class="title">FAQ</h1>
+                <div class="cls"></div>
+                <div class="static">
+                    <div class="cls">&nbsp;</div>
+                    <div class="b3 b3-1">
+                        <h3><img src="assets/images/faq-b1.png" alt="Безопасно" /> Безопасно</h3>
+                        Мы используем 256 битный сертификат, который защищает ваши транзакции и авторизации на сайте. С нами вы будете в безопасности!</div>
+                    <div class="b3 b3-2">
+                        <h3><img src="assets/images/faq-b2.png" alt="Честно" /> Честно</h3>
+                        Система OliCash основана на билетном алгоритме, который определяет число с учетом коэффицента и случайной генерации числа.</div>
+                    <div class="b3 b3-3">
+                        <h3><img src="assets/images/faq-b3.png" alt="Моментально" /> Моментально</h3>
+                        Вы получите свой выигрыш моментально на баланс системы. Также вы можете обменять цифровой товар на эквивалент в деньгах - тоже моментально!</div>
+                    <div class="cls">&nbsp;</div>
+<div class="faq">
+<div class="question">Что такое OliCash?</div>
+Проект <a href="account/index.html">OliCash</a> онлайн игра по открытию кейсов. Каждый кейс имеет определенную ценность и стоимость. Вы можете выбрать подходящий вам кейс и испытать удачу! Обычно кейсы содержат несколько призов, один из которых в обязательном порядке выпадает после старта игры. Выпавший приз может иметь ценность как выше поставленной вами суммы так и ниже. Все кейсы беспроигрышные!</div>
+<div class="faq">
+<div class="question">Как это работает?</div>
+Система в случайном порядке генерирует выпадание приза после старта игры. Чем дешевле приз тем больше его шанс выпадения. К примеру самый дорогой приз может не выпасть 5 другим участником и выпасть вам с первого же раза. Испытайте удачу вместе с 4cash.ru</div>
+<div class="faq">
+<div class="question">Как можно пополнить баланс?</div>
+Баланс можно пополнить как напрямую выбрав WebMoney, Яндекс Деньги, QIWI также через платежный агрегатор Interkassa, FreeKassa и другие. Платежный агрегатор обеспечивает прием оплаты более чем из 50 разных систем оплат, включая мобильные платежи, банковские карты, терминалы и многое другое.<br> Для пополнения баланса перейдите в свой личный кабинет и нажмите "Пополнить баланс"</div>
+<div class="faq">
+<div class="question">Как вывести средства?</div>
+Войдите в личный кабинет, нажмите на кнопку "Вывод средств". Обратите внимание! В среднем вывод происходит в течении 24 часов. Пожалуйста, поймите и нас, в день мы обрабатываем более 3000 платежей и максимально стараемся это делать быстро.</div>
+<div class="faq">
+<div class="question">Как определяется приз?</div>
+Программа для вычисления победителя основана на генерации случайного числа исходя из процентного шанса приза. Чем дороже приз - тем меньше шанс выпадения.</div>
+<div class="faq">
+<div class="question">Что такое партнерский код?</div>
+Партнерский код - дает возможность заработать больше! Дарите свой код друзьям и с каждого пополнения баланса ими, вам начисляется 5% от суммы их пополнения. Или же вы погашаете код друга и получаете 10р сразу на баланс! Перейдите в "Мой аккаунт" и вы увидите как свой партнерский код, так и поле, где можно ввести партнерский код друга.</div>
+<div class="faq">
+<div class="question">Куда вводить партнерский код?</div>
+Перейдите в "Мой аккаунт" и в поле "Введите код и получите 10р" введите его :)</div>
+<div class="faq">
+<div class="question">Что такое увеличитель шанса?</div>
+Увеличитель шанса, дает вам шанс выиграть более дорогой приз чаще чем обычно. Чем выше ваш дополнительный шанс, тем больше вероятности, что вам выпадет более дорогой приз за маленькую плату.</div>
+<div class="faq">
+<div class="question">Деньги не пришли!!!</div>
+Вывод средств производится в течении 24-х часов. Если, вдруг, средства не пришли в течении указанного времени - обратитесь в тех.поддержку.</div>
+<div class="faq">
+<div class="question">Как я получу мышь, клавиатуры и другие предметы?</div>
+Во первых поздравляем! Зайдите в "Мой кабинет" там в истории ваших призов вы увидите ваш предметный приз на котором будет кнопка "Получить". Нажмите на нее и система предложит либо обменять приз на средства, которые моментально перечисляются на баланс либо взять сам приз. При выборе приза вам выдаст окно, в котором необходимо указать все данные для доставки.</div>
+<div class="faq">
+<div class="question">Как скоро я получу предметный приз?</div>
+Все призы обрабатываются в течении 24 часов и отправляются на ваш почтовый адрес. Время доставки может варьировать в зависимости от вашей страны и города. В среднем доставка по России и Украине осуществляется в течении 14 дней после отправки.</div>
+<div class="faq">
+<div class="question">Как активировать Steam Gift карту?</div>
+Войдите в свой аккаунт на сайте Steam, и перейдите в <a href="https://store.steampowered.com/account/redeemwalletcode" target="_blank" rel="nofollow">раздел активации подарочных карт</a>. Введите полученный подарочный код и ваш кошелек в Steam пополнится.</div>
+<div class="faq">
+<div class="question">Как активировать iTunes карту?</div>
+Войдите в App Store на вашем iPhone, iPad, Mac или другом устройстве от Apple Inc. Перейдите на главную страницу App Store и прокрутите страницу до самого низа. Там вы увидите пункт для погашения подарочного кода. Нажмите на него и введите полученный код</div>
+<div class="faq">
+<div class="question">Как активировать подарочную карту PlayStation Network?</div>
+Авторизуйтесь в PlayStation(r)Store на вашей консоли или на сайте. Выберите пункт "Погашение кодов". Введите 12 цифр промокода и нажмите "Продолжить". Далее следуйте инструкциям на экране, чтобы погасить ваш промокод.</div>
+<div class="touch-now text-center">
+<h3>Не нашли ответ на ваш вопрос?</h3>
+<a class="btn yellow rounded" href="support/index.html">Напишите нам!</a></div>
+</div>
+            </div>
+</main>
+ <footer class="footer">
+            <div class="inner">
+                <div class="l">
+                  <ul>
+                      <li><a href="account/index.html" class="eas ">Кейсы</a></li>
+                      <li><a href="faq.html" class="eas ">FAQ</a></li>
+                      <li><a href="guaranties.html" class="eas ">Гарантии</a></li>
+                      <li><a href="https://vk.com/topic-135338322_35108367" class="eas ">Отзывы</a></li>
+                      <li><a href="support.html" class="eas active">Техническая поддержка</a></li>
+                  </ul>
+                   <div class="copy">
+Copyright © 2016 OliCash.com. Все права защищены.<br>Авторизуясь на сайте вы принимаете <a href="tos.html">пользовательское соглашение</a>
+</div>
+                </div>
+                <div class="r">
+                    <p class="head-h5">Принимаем</p>
+                    <div class="cls"></div>
+                    <div class="img"><img src="assets/images/payment-methods.png"></div>
+                    <div class="wm-box">
+                        <!-- begin WebMoney Transfer : accept label -->
+                        <a href="http://www.megastock.ru/" target="_blank"><img src="assets/images/payment-wm-logo.png" class="wm wm-1" /></a>
+                        <!-- end WebMoney Transfer : accept label -->
+                        <!-- begin WebMoney Transfer : attestation label -->
+                        <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=" target="_blank"><img src="assets/images/payment-wm-attestat.png" class="wm" style="position: absolute;bottom: 3px;left: -52px; width: 46px;" /></a>
+                        <!-- end WebMoney Transfer : attestation label -->
+                        <a href="https://www.free-kassa.ru/"><img src="assets/images/payment-freekassa.png"></a>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="cls"></div>
+            </div>
+        </footer>
+    </div>
+    <!-- .wrapper -->
+    <div id="deposit" class="popup">
+      <form action="https://olicash.com/deposit">
+        <div class="popup-container">
+            <div class="eas close" onclick="popupClose('#deposit');"><span class="flaticon-close"></span></div>
+            <p class="head-h3">Пополнить баланс</p>
+            <div class="info">Вы можете пополнить баланс напрямую через WebMoney и Яндекс Деньги.<br> Если вы хотите пополнить баланс через QIWI, Банковские карты, мобильного оператора, терминал и так далее, пожалуйста, выберите Interkassa или Free-Kassa</div>
+            <p class="head-h4">Сумма</p>
+            <div class="cls"></div>
+            <div class="amount-l">
+             
+                    <input type="text" class="inp" id="depositbalance" maxlength="4" min="1" max="5000" value="100" name="b">
+                
+            </div>
+            <div class="amount-r">
+                Максимальная сумма за раз: <b>15000р</b><br>Минимальная сумма: <b>10р</b>
+            </div>
+            <div class="cls"></div>
+            <p class="head-h4">Выберите платежную систему</p>
+            <div class="cls"></div><span class="payment-method eas pm-webmoney active"><img src="assets/images/payment-webmoney.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-yandex"><img src="assets/images/payment-yandex.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-qiwi" onclick="changePaymentMethod('qiwi');"><img src="assets/images/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+            <div class="cls"></div>
+            
+            <div class="foo"><input type="submit" class="btn orange rounded" value="Пополнить баланс" onclick="depositNow();"></div>
+        </div>
+        <div class="popup-overlay" onclick="popupClose('#deposit');"></div>
+    </form>
+    </div>
+    <div id="withdrawal" class="popup">
+      <form class="form-inline" role="form" style="text-align:center;" id="withdrawform">
+        <div class="popup-container">
+                <div class="loader"><img src="assets/images/loader.svg"></div>
+                <div class="eas close" onclick="popupClose('#withdrawal');"><span class="flaticon-close"></span></div>
+                <p class="head-h3">Вывод средств</p>
+                <div class="info">Обработка вывода обычно осуществляется в течении часа.<br>В некоторых случаях платеж может быть обработан до 24 часов.<br>Минимальная сумма к выводу <b>100р</b></div>
+                <div class="cls"></div>
+                <div class="amount-l">
+                    <p class="head-h4">Сумма</p>
+                    <input type="text" name="amount" class="inp" maxlength="5" value="100" id="withdrawbalance">
+                    <input type="hidden" name="type" id="withdrawal-type-field" value="webmoney">
+                </div>
+                <div class="amount-r amount-r2">
+                    <p class="head-h4">Номер кошелька</p>
+                    <input type="text" name="purse" class="inp PurseHolder" maxlength="16" id="withdrawsystem" placeholder="Пример: R23884920195">
+                </div>
+                <div class="cls"></div>
+                <p class="head-h4">Куда хотите вывести?</p>
+                <div class="cls"></div>
+
+                <span class="payment-method eas pm-webmoney w-d active" data-v="webmoney"><img src="assets/images/payment-webmoney.svg"><span class="flaticon-check"></span>
+                </span>
+
+                <span class="payment-method eas pm-yandex w-d" data-v="yandex"><img src="assets/images/payment-yandex.svg"><span class="flaticon-check"></span></span>
+
+                <span class="payment-method eas pm-qiwi w-d" data-v="qiwi"><img src="assets/images/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+
+                <div class="cls"></div>
+                <div class="foo foo-2"><input type="submit" class="btn blue rounded" value="Вывести средства" ></div>
+           
+        </div>
+        <div class="popup-overlay" onclick="popupClose('#withdrawal');"></div>
+        </form>
+    </div>
+    <div class="ie-update">
+        <p>Ваш браузер устарел :(</p>Пожалуйста, <a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie' rel='nofollow' target='_blank'>скачайте новую версию</a> Internet Explorer<br><small>Однако мы рекомендуем Google Chrome, Firefox и Safari. </small></div>
+    <!--[if IE]></div><![endif]--><a class="vk-button" href="https://vk.com/olicash" rel="nofollow" target="_blank"><span class="flaticon-soc-vk"></span> Мы Вконтакте</a>
+
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script>
+<script>!function(e,t,d,s,a,n,c){e[a]={},e[a].date=(new Date).getTime(),n=t.createElement(d),c=t.getElementsByTagName(d)[0],n.type="text/javascript",n.async=!0,n.src=s,c.parentNode.insertBefore(n,c)}(window,document,"script","https://olicashcom.push.world/embed.js","pw"),pw.websiteId="4ed6feb40b794f38d9452b301c026204604800afde77b7fd9c62fa3ed09d9421";</script>
+</body>
+
+</html>
+       

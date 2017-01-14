@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>OliCash.com - Магазин кейсов!</title>
+    <meta name="description" content="OliCash.com - Магазин кейсов!" />
+    <meta name="keywords" content="RGBcash,открытие кейсов,призовые кейсы,дропы,кейсы, кейс на реальные деньги" />
+    <meta name="author" content="Madstud. (https://vk.com/madstud)" />
+    <link rel="stylesheet" href="assets/css/stylee.css" />
+    <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/core.js"></script>
+    <script type="text/javascript" src="assets/js/app2.js"></script>
+    <script type="text/javascript" src="assets/js/socket.io-1.4.5.js"></script>
+<script src="assets/js/toastr.min.js">
+  </script>
+      <link rel="stylesheet" href="assets/js/toastr.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="https://olicash.com/favicon.ico" />
+    <script>
+    var sockethost = 'https://olicash.com:2087';
+    var vkid = '1';
+    var salt = '1';
+        (function(p, u, s, h) {
+            p._pcq = p._pcq || [];
+            p._pcq.push(['_currentTime', Date.now()]);
+            s = u.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://cdn.pushcrew.com/js/aabfd29e2cb24857d294e3de9f8106c5.js';
+            h = u.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(s, h);
+        })(window, document);
+
+        window.addEventListener('load', function() {
+      $("#nav-toggle").click(function(e) {
+        e.preventDefault();
+        $(".navmenu").toggleClass('show');
+      });
+      $('.payment-method').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+      });
+      
+    });
+    </script>
+</head>
+
+<body>
+    <!--[if lt IE 6]><div class="ie6"><![endif]-->
+    <!--[if IE 7]><div class="ie7"><![endif]-->
+    <!--[if IE 8]><div class="ie8"><![endif]-->
+    <!--[if gt IE 8]><div class="ie9"><![endif]-->
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="account/index.html"><img src="assets/images/logo2.png" alt="rgbcash"></a>
+                </div>
+                <div class="u-menu">
+          
+            <a href="auth/vk.html" style="color:inherit;text-decoration:none;">
+              <ul class="social-login" id="uLogin">
+                <li class="btn sexy gradient-blue icon-r flaticon-vk" data-uloginbutton="vkontakte"><b>Войти через</b> <span class="flaticon-soc-vk"></span></li>
+              </ul>
+            </a>
+            <div class="cls"></div>
+          
+                </div>
+<nav class="nav">
+  <div class="nav-button"><span class="flaticon-menu"></span></div>
+    <ul>
+	  
+      <li><a href="account/index.html" class="eas active">Кейсы</a></li>
+      <li><a href="faq.html" class="eas ">FAQ</a></li>
+      <li><a href="https://vk.com/changer_rgb" class="eas ">Группа VK</a></li>
+      <li><a href="https://vk.com/topic-119236339_33989164" class="eas">Отзывы</a></li>
+	   
+    </ul>
+  </nav>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40481914-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40839834 = new Ya.Metrika({
+                    id:40839834,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/40839834" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+                <div class="cls"></div>
+            </div>
+        </header>
+        <div class="sub-header">
+            <div class="inner">
+                <div class="stat">
+                    <div class="o o-1">Онлайн
+                        <div id="online">32</div>
+                    </div>
+                    <div class="l"></div>
+                    <div class="o">Пользователей
+                        <div id="users">15669</div>
+                    </div>
+                    <div class="l"></div>
+                    <div class="o">Открыто кейсов
+                        <div id="cases">18699</div>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="live">
+                    <div class="name">Live призы</div>
+                    <div class="prize" id="live-prize-box">
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-5.svg" alt="5">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-1.svg" alt="1">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-25.svg" alt="25">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-25.svg" alt="25">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-10.svg" alt="10">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-1.svg" alt="1">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-1.svg" alt="1">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-15.svg" alt="15">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-10.svg" alt="10">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-20.svg" alt="20">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-10.svg" alt="10">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-5.svg" alt="5">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-20.svg" alt="20">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-25.svg" alt="25">
+                          </div>
+                        
+                          <div class="b">
+                             <div class="winner-box eas">
+                                <div class="winner eas"><a href="profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg" alt="coin-10.svg" width="200" height="200"></a></div>
+                             </div>
+                             <img src="assets/images/cases/coin-20.svg" alt="20">
+                          </div>
+                        
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="cls"></div>
+            </div>
+        </div>
+        <main class="content">
+            <div class="inner">
+                <h1 class="title">Пользовательское соглашение</h1>
+                <div class="cls"></div>
+                <div class="static">
+                    <div class="terms">
+                        <h3>1. ОБЩИЕ ПОЛОЖЕНИЯ И ТЕРМИНЫ</h3>
+                        1.1. Данный документ является договором на использование OliCash.com. Ниже приведены правила и условия использования Сервиса. Пожалуйста, внимательно ознакомьтесь с ними.<br /> 1.2. Сервисом могут пользоваться пользователи достигшие 18-ти летия.<br /> 1.3. Игра "OliCash.com" - беспроигрышная онлайн игра, магазин кейсов принадлежащяя организатору и находящиейся по адресу в сети интерет https://olicash.com. Организатором предоставляются услуги пользователю по организацию его развлечения, досуга и отдыха.<br /> 1.4 Организаторы беспроигрышной онлайн игры магазина кейсов OliCash.com никого насильно не заставляют проводить свой досуг на этом проекте.<br />
+                        <h3>2. УЧЕТНАЯ ЗАПИСЬ, ПАРОЛЬ, БЕЗОПАСНОСТЬ</h3>
+                        Для открытия Учетной Записи пользователь должен авторизоваться через Вконтакте.<br /> Пользователь несет полную ответственность за хранение конфиденциальной информации, за потерю доступа к своей Учетной Записи.<br /> Кроме того, пользователь несет полную ответственность за любые совершенные им действия.<br /> Сервис не несет ответственности за поступки, совершенные Пользователем в отношении третьих лиц.<br /> Пользователь обязуется сообщить Сервису о любом несанкционированном использовании его Учетной записи.<br />
+                        <h3>3. КОНФИДЕНЦИАЛЬНОСТЬ</h3>
+                        Сервис обязуется не редактировать и не раскрывать любую конфиденциальную информацию, предоставленную Пользователем Сервису.<br /> Сервис также обязуется хранить личный пароль пользователя в зашифрованном виде. <br /> Личные данные могут быть предоставлены третьим лицам лишь в связи с нарушением законодательства, а также оскорблением или клеветой в отношении брендов или торговых марок третьих лиц.<br />
+                        <h3>4. ПОЛЬЗОВАТЕЛЬ</h3>
+                        Сервис оставляет за собой право в любой момент блокировать Пользователя в связи с нарушением правил использования Сервиса или законодательства.<br /> Неприемлемы попытки несанкционированного доступа, попытки нанесения вреда Сервису.<br /> При добавлении на сайт любой информации, запрещены оскорбления, вымогательства, клевета, блеф, сообщения, содержащие вредоносную информацию (в т.ч. вирусы, трояны, черви и т.п.), а также информация, способная нанести вред третьим лицам.<br />
+                        <h3>5. ЗАПРЕЩЕНО</h3>
+                        5.1 Запрещается публиковать фальсифицированные данные<br /> 5.2 Запрещается передача любых материалов, которые могут нарушить интеллектуальную собственность третьих лиц<br /> 5.3 Запрещаются фальшивые публикации информации с целью получения несанкционированных доступов к информации или данным третьих лиц<br /> 5.4 Запрещается публикация информации религиозного и политического характера<br /> 5.5 Запрещается регистрировать более одной Учетной Записи<br /> 5.6 Запрещается передавать данные для доступа к Учетной записи третьим лицам<br /> 5.7 Запрещается оскорблять, обзывать, ставить под сомнение профессиональную квалификацию и добросовестность физических и юридических лиц, в том числе Пользователей Сервиса и Администрации Сервиса.<br /> 5.8 Запрещается выбирать себе аватары, содержащие сцены насилия, угрозы, сквернословия, разврат (порнография), дискриминация в любых проявлениях, коммерческая реклама и рекламные тексты<br />
+                        <h3>6. ПРИНЯТИЕ УСЛОВИЙ СОГЛАШЕНИЯ (АКЦЕНТ ОФЕРТЫ)</h3>
+                        6.1 Зарегистрировавшись в Сервисе, Вы, тем самым, принимаете условия настоящего Соглашения.<br />
+                        <h3>7. ПРАВА</h3>
+                        7.1. Исключительное право на Сервис принадлежит Сервису<br /> 7.2. Все права на материалы, представленные на нашем сайте, принадлежат Правообладателям</div>
+                </div>
+                <div class="cls"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="inner">
+                <div class="l">
+                    <div class="copy">
+                        Copyright &copy; 2016 opcash.ru. Все права защищены.
+                    </div>
+                </div> 
+        </footer>
+    </div>
+    <!-- .wrapper -->
+</body>
+</html>
