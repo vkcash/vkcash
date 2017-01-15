@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8" />
+<!-- saved from url=(0028)http://casemoney.one/account/ -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <title>OliCash.com - Кейсы с деньгами!</title>
-    <meta name="description" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами" />
-    <meta name="keywords" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами" />
-    <meta name="yandex-verification" content="96e122fd959bac2b" />
-    <link rel="stylesheet" href="../assets/css/stylee.css" />
-    <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="../assets/js/core.js"></script>
-    <script type="text/javascript" src="../assets/js/app2.js"></script>
-    <script type="text/javascript" src="../assets/js/socket.io-1.4.5.js"></script>
-<script src="../assets/js/toastr.min.js">
+    <title>CaseMoney.one - Кейсы с деньгами!</title>
+    <meta name="description" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами">
+    <meta name="keywords" content="Открытие кейсов с деньгами бесплатно, кейсы с деньгами">
+    <meta name="yandex-verification" content="96e122fd959bac2b">
+    <link rel="stylesheet" href="./index_files/stylee.css">
+    <script type="text/javascript" async="" src="./index_files/embed.js.Без названия"></script><script type="text/javascript" src="./index_files/jquery-2.2.4.min.js.Без названия"></script>
+    <script type="text/javascript" src="./index_files/core.js.Без названия"></script>
+    <script type="text/javascript" src="./index_files/app2.js.Без названия"></script>
+    <script type="text/javascript" src="./index_files/socket.io-1.4.5.js.Без названия"></script>
+<script src="./index_files/toastr.min.js.Без названия">
   </script>
-      <link rel="stylesheet" href="../assets/js/toastr.min.css" />
+      <link rel="stylesheet" href="./index_files/toastr.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <link rel="shortcut icon" href="http://casemoney.one/assets/images/favicon.png">
     <script>
-    var sockethost = 'https://olicash.com:2087';
-    var vkid = '1';
-    var salt = '1';
+    var sockethost = 'http://casemoney.one:2087';
+    var vkid = '178515510';
+    var salt = '2709bd6b01b0f481f4e0dd34441bc0f6eb3c2a7b';
 
 
         window.addEventListener('load', function() {
@@ -47,27 +46,31 @@
         <header class="header">
             <div class="inner">
                 <div class="logo">
-                    <a href="index.html"><img src="../assets/images/logo2.png" alt="кейсы с деньгами"></a>
+                    <a href="http://casemoney.one/"><img src="./index_files/logo2.png" alt="кейсы с деньгами"></a>
                 </div>
                 <div class="u-menu">
           
-            <a href="../auth/vk.html" style="color:inherit;text-decoration:none;">
-              <ul class="social-login" id="uLogin">
-                <li class="btn sexy gradient-blue icon-r flaticon-vk" data-uloginbutton="vkontakte"><b>Войти через</b> <span class="flaticon-soc-vk"></span></li>
-              </ul>
-            </a>
-            <div class="cls"></div>
+            <div class="userpic">
+              <a href="http://casemoney.one/account.html"><img src="./index_files/532N08mdyh8.jpg"></a>
+            </div>
+           <div class="userinfo">
+             <div class="name"><a href="http://casemoney.one/account/index.html" class="eas">Паша Тальянчук</a></div>
+             <div class="price"><span class="flaticon-money"></span> <b id="balance">0</b><span class="flaticon-ruble ruble-small"></span> <span class="plus eas" onclick="popupOpen(&#39;#deposit&#39;);">+</span> <span class="minus eas" onclick="popupOpen(&#39;#withdrawal&#39;);">-</span></div>
+          </div>
           
                 </div>
 <nav class="nav">
   <div class="nav-button"><span class="flaticon-menu"></span></div>
     <ul>
 	  
-      <li><a href="index.html" class="eas active">Кейсы</a></li>
-      <li><a href="../faq.html" class="eas ">FAQ</a></li>
+      <li><a href="http://casemoney.one/" class="eas">Кейсы</a></li>
+      <li><a href="http://casemoney.one/faq.html" class="eas ">FAQ</a></li>
       <li><a href="https://vk.com/olicash" class="eas ">Группа VK</a></li>
       <li><a href="https://vk.com/topic-135338322_35108367" class="eas">Отзывы</a></li>
 	   
+	   <li><a href="http://casemoney.one/account/index.html" class="eas">Профиль</a></li>
+      <li><a href="http://casemoney.one/account/#" class="eas" onclick="popupOpen(&#39;#deposit&#39;);">Пополнить</a></li>
+	  
     </ul>
   </nav>
                 <div class="cls"></div>
@@ -77,126 +80,116 @@
             <div class="inner">
                 <div class="stat">
                     <div class="o o-1">Онлайн
-                        <div id="stat_online">72</div>
+                        <div id="stat_online">78</div>
                     </div>
                     <div class="l"></div>
                     <div class="o">Пользователей
-                        <div id="stat_users">15669</div>
+                        <div id="stat_users">16417</div>
                     </div>
                     <div class="l"></div>
                     <div class="o">Открыто кейсов
-                        <div id="stat_opened">18699</div>
+                        <div id="stat_opened">19569</div>
                     </div>
                     <div class="cls"></div>
                 </div>
                 <div class="live">
                     <div class="name">Live призы</div>
-                    <div class="prize" id="live-prize-box">
+                    <div class="prize" id="live-prize-box"><div class="b"><div class="winner-box eas"><div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div></div><img class="coin" src="./index_files/coin-5.svg" alt="5"></div><div class="b"><div class="winner-box eas"><div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div></div><img class="coin" src="./index_files/coin-10.svg" alt="10"></div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-5.svg">
+                             <img class="coin" src="./index_files/coin-40.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-1.svg">
+                             <img class="coin" src="./index_files/coin-1.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-25.svg">
+                             <img class="coin" src="./index_files/coin-20.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/372305790.html"><img src="./index_files/_WsmOgKcn6A.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-25.svg">
+                             <img class="coin" src="./index_files/coin-20.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-10.svg">
+                             <img class="coin" src="./index_files/coin-5.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-1.svg">
+                             <img class="coin" src="./index_files/coin-10.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-1.svg">
+                             <img class="coin" src="./index_files/coin-40.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/372305790.html"><img src="./index_files/_WsmOgKcn6A.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-15.svg">
+                             <img class="coin" src="./index_files/coin-20.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-10.svg">
+                             <img class="coin" src="./index_files/coin-40.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/372305790.html"><img src="./index_files/_WsmOgKcn6A.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-20.svg">
+                             <img class="coin" src="./index_files/coin-30.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-10.svg">
+                             <img class="coin" src="./index_files/coin-10.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-5.svg">
+                             <img class="coin" src="./index_files/coin-50.svg">
                           </div>
                         
                           <div class="b">
                              <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
+                                <div class="winner eas"><div class="userpic"><a href="http://casemoney.one/profile/352778059.html"><img src="./index_files/VQOnVNCmwMQ.jpg"></a></div></div>
                              </div>
-                             <img class="coin" src="../assets/images/cases/coin-20.svg">
+                             <img class="coin" src="./index_files/coin-1.svg">
                           </div>
                         
-                          <div class="b">
-                             <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/271729261.html"><img src="https://pp.vk.me/c638326/v638326261/17042/sMP-Zuxv_Ew.jpg"></a></div></div>
-                             </div>
-                             <img class="coin" src="../assets/images/cases/coin-25.svg">
-                          </div>
+                          
                         
-                          <div class="b">
-                             <div class="winner-box eas">
-                                <div class="winner eas"><div class="userpic"><a href="../profile/221811744.html"><img src="https://pp.vk.me/c630424/v630424744/403f9/YV3GkOn-hjs.jpg"></a></div></div>
-                             </div>
-                             <img class="coin" src="../assets/images/cases/coin-20.svg">
-                          </div>
+                          
                         
                     </div>
                     <div class="cls"></div>
@@ -204,465 +197,139 @@
                 <div class="cls"></div>
             </div>
         </div>
-
+  
         <main class="content">
             <div class="inner">
-                <div class="cls"></div>
-            
-                <div class="cases" style="margin-top:30px;">
-                    <div class="cls"></div>
-					
-						<div class="case-grid" data-case-pricef="1" data-case-pricet="50" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/8.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>20 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-50.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 269,153<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>1<span class="flaticon-ruble ruble-small"></span></b> до <b>50<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="10" data-case-pricet="100" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/4.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>50 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-100.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 63,325<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>10<span class="flaticon-ruble ruble-small"></span></b> до <b>100<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="20" data-case-pricet="250" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/15.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>70 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-250.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 17,671<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>20<span class="flaticon-ruble ruble-small"></span></b> до <b>250<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="30" data-case-pricet="500" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/7.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>100 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-500.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 71,190<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>30<span class="flaticon-ruble ruble-small"></span></b> до <b>500<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="50" data-case-pricet="600" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/18.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>240 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-700.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 6,350<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>50<span class="flaticon-ruble ruble-small"></span></b> до <b>600<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="70" data-case-pricet="1000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/6.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>400 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-1000.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 34,260<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>70<span class="flaticon-ruble ruble-small"></span></b> до <b>1000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="100" data-case-pricet="1500" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/22.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>500 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-1500.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 16,250<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>100<span class="flaticon-ruble ruble-small"></span></b> до <b>1500<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="150" data-case-pricet="2000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/5.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>800 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-2000.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 14,250<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>150<span class="flaticon-ruble ruble-small"></span></b> до <b>2000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="300" data-case-pricet="5000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/1.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>1500 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-5000.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 33,900<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>300<span class="flaticon-ruble ruble-small"></span></b> до <b>5000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="500" data-case-pricet="15000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/9.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>3000 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-15000.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 23,700<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>500<span class="flaticon-ruble ruble-small"></span></b> до <b>15000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="1000" data-case-pricet="30000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/10.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>7000 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/coin-30000.svg"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 84,4000<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>1000<span class="flaticon-ruble ruble-small"></span></b> до <b>30000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="50" data-case-pricet="62000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/19.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>400 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/macbook.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 1,651<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>50<span class="flaticon-ruble ruble-small"></span></b> до <b>62000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="100" data-case-pricet="85000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/20.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>450 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/iphone.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 1003<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>100<span class="flaticon-ruble ruble-small"></span></b> до <b>85000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="1" data-case-pricet="83000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/16.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>1500 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/lore21.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 2<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>1<span class="flaticon-ruble ruble-small"></span></b> до <b>83000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="50" data-case-pricet="0" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/11.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>230 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/jawbone-up-2.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 44,001<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>50<span class="flaticon-ruble ruble-small"></span></b> до <b>0<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="100" data-case-pricet="6000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/12.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>400 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/Steelseries-Siberia-v2-Frost-Blue.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 35,601<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>100<span class="flaticon-ruble ruble-small"></span></b> до <b>6000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="100" data-case-pricet="9000" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/14.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>400 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/HyperX-Alloy-FPS.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 2,705<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>100<span class="flaticon-ruble ruble-small"></span></b> до <b>9000<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-						<div class="case-grid" data-case-pricef="100" data-case-pricet="6400" data-case-status="1" data-case-type="1">
-							<div class="case">
-								<a href="../case/13.html">
-								<div class="hover eas">
-									<div class="light"></div>
-								</div>
-								<div class="price">
-									<b class="priceinfo"></b>450 <span class="flaticon-ruble"></span></div>
-								<div class="img">
-									<div class="prize"><img src="../assets/images/cases/SteelSeries-Rival-300.png"></div>
-									<div class="cover"><img src="../assets/images/cases/case-cover.png"></div>
-								</div>
-								<div class="payed">
-									<div class="center"><span class="payedinfo"></span> 4,900<span class="flaticon-ruble ruble-small"></span></div>
-								</div>
-								<div class="case-footer"><span class="continfo"></span> <b>100<span class="flaticon-ruble ruble-small"></span></b> до <b>6400<span class="flaticon-ruble ruble-small"></span></b></div>
-							</div></a>
-						</div>
-					
-
-                    <div class="infobox case-empty">
-                        <h3><span class='flaticon-cry'></span> Ой ой ой..</h3>По данным параметрам ничего не найдено<br>Хотите предложить новый формат кейса? <a href='https://olicash.com/support.php'>Напишите нам</a>!
+                <div class="account">
+                    <div class="userbox">
+                        <div class="l">
+                            <a href="http://casemoney.one/logout/" class="logout">Выйти</a>
+                            <div class="userpic"><img src="./index_files/532N08mdyh8.jpg" alt="Dyson Denis"></div>
+                            <h1>Паша Тальянчук <a href="https://vk.com/id178515510" target="_blank"><span class="flaticon-soc-vk"></span></a></h1>
+                            <div class="u-cases"><span class="flaticon-case"></span> Кейсы: <span class="n">0</span></div>
+                            <div class="u-money"><span class="flaticon-money"></span> Выигрыш: <span class="n">0р</span></div>
+                            <div class="u-balance"><span class="flaticon-ruble"></span> Баланс: <span class="n"><b id="u-balance-field">0</b>р</span></div>
+                        </div>
+                        <div class="r">
+                            <a href="http://casemoney.one/account.php?group=admin&amp;act=balance_test" style="text-decoration: none;color: #1f2331">.</a>
+                            <a href="http://casemoney.one/account/#deposit" onclick="popupOpen(&#39;#deposit&#39;);return false;" class="btn yellow">Пополнить баланс</a> <a href="http://casemoney.one/account/#withdrawal" class="btn darkblue" onclick="popupOpen(&#39;#withdrawal&#39;);return false;">Вывод средств</a>
+                        </div>
+                        <div class="cls"></div>
                     </div>
-                    <div class="cls"></div>
+                    <div class="referral">
+                        <div class="b1">
+                            <h3><span class="flaticon-users"></span> Пригласи друзей и заработай больше!</h3>
+                            <div class="desc">Отправь свой уникальный код друзьям<br> и <span>получи 
+                            
+                                5%</span> от каждого пополнения баланса другом!</div>
+                            
+							<div style="width: 30%;float: left;">
+                            <div class="field"><input type="text" class="inp" value="MTc4NTE1NTEw" readonly="readonly" onclick="select();"></div>
+							</div>
+							<div style="width: 70%;float: left;padding-left: 20px;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;">
+                            <div class="field"><input type="text" class="inp" value="http://casemoney.one/?ref=MTc4NTE1NTEw" readonly="readonly" onclick="select();"></div>
+                            </div>
+							<div style="width: 70%;float: left;">
+                            <p>По вашему коду зарегистрировано: <span class="blue_bold">0 чел.</span></p>
+							</div>
+                        </div>
+                        <div class="b2">
+                            <div class="loader" id="redeem-loader"><img src="./index_files/loader.svg" alt=""></div>
+                            <h3><span class="flaticon-money"></span> Введи код и получи 10р!</h3>
+                            <div class="desc">У вас есть партнерский код?<br> Введите его в поле и <span>получите 10 рублей</span> прямо сейчас!</div>
+                            <div class="field">
+                            <form id="refsubmit" onsubmit="sendref(this);return false;">
+                                <input type="text" name="refcode" class="inp redeem-input" placeholder="Введите код" value="">
+								<input type="button" class="btn" value="OK" onclick="RedeemCode($(&#39;.redeem-input&#39;), this, &#39;#redeem-loader&#39;);">
+                                
+                                 <button class="btn" type="submit">OK</button>
+                                  
+                                  </form>
+                            </div>
+                            <div class="short">Введите код и нажмите enter</div>
+                        </div>
+                        <div class="cls"></div>
+                    </div>
+                   <div class="tabs">
+                        <div class="tab tab-1 eas" data-tab-id="1">Призы</div>
+                        <div class="tab tab-2 eas" data-tab-id="2">История</div>
+                        <div class="tab tab-3 eas" data-tab-id="3">Финансы</div>
+                        </div>
+                    <div class="tab-container tab-container-1 active" style="display: block;">
+                        <div class="cls"></div>
+                
+
+                            
+                         <div class="infobox text-center"><br>
+                            <h3>
+                                <center>Вы не открывали кейсов :(</center>
+                            </h3> <a href="http://casemoney.one/" class="btn rounded blue">Открыть и выиграть</a><br><br></div>
+                          
+                    </div>
+                    <div class="tab-container tab-container-2" style="display: none;">
+                        <div class="infobox">
+                            <table class="table history-money">
+                                    <thead>
+                                    <tr>
+                                    <td width="50">№</td>
+                                    <td>Описание</td>
+                                    <td width="150" class="text-center">Сумма</td>
+                                    <td width="150" class="text-center">Дата</td>
+                                    <td width="80" class="text-center">Статус</td>
+                                    </tr>
+                                    </thead>
+                                <tbody>
+                        
+                                </tbody>
+                                </table>
+                        </div>
+                    </div>
+                    <div class="tab-container tab-container-3" style="display: none;">
+                            <table class="table history-money">
+                                    <thead>
+                                    <tr>
+                                    <td width="50">№</td>
+                                    <td>Описание</td>
+                                    <td width="150" class="text-center">Сумма</td>
+                                    <td width="150" class="text-center">Дата</td>
+                                    <td width="80" class="text-center">Статус</td>
+                                    </tr>
+                                    </thead>
+                                <tbody>
+                        
+                                </tbody>
+                                </table>
+                    </div>
                 </div>
+                <div class="seperator"></div>
             </div>
         </main>
-        
-        <div class="top-users">
-            <div class="inner">
-                <p class="head-h3">Самые везучие</p>
-                <div class="cls"></div>
-                <div class="top-3">
-                    <div class="t2">
-                        <div class="img">
-                            <a href="../profile/96172678.html"><img src="../assets/images/top-2-3.png" class="back eas"><div class="topimg"><img src="https://pp.vk.me/c633416/v633416678/62ac/xGM_oDHL6Ps.jpg"></div></a>
-                        </div>
-                        <div class="u-cases"><span class="flaticon-case"></span> </div>
-                        <div class="u-money"><span class="flaticon-money"></span> 17480<span class="flaticon-ruble small-icon"></span></div>
-                    </div>
-                    <div class="t1">
-                        <div class="img">
-                            <a href="../profile/24373534.html"><img src="../assets/images/top-1.png" class="back eas"><div class="topimg"><img src="https://pp.vk.me/c637520/v637520534/16eef/O4u061b6he0.jpg"></div></a>
-                        </div>
-                        <div class="u-cases"><span class="flaticon-case"></span> </div>
-                        <div class="u-money"><span class="flaticon-money"></span> 28628<span class="flaticon-ruble small-icon"></span></div>
-                        <div class="back-shadow"></div>
-                    </div>
-                    <div class="t3">
-                        <div class="img">
-                            <a href="../profile/265357319.html"><img src="../assets/images/top-2-3.png" class="back eas"><div class="topimg"><img src="https://pp.vk.me/c837324/v837324319/d6c/w5yBYL2ZvlU.jpg"></div></a>
-                        </div>
-                        <div class="u-cases"><span class="flaticon-case"></span> </div>
-                        <div class="u-money"><span class="flaticon-money"></span> 16506<span class="flaticon-ruble small-icon"></span></div>
-                    </div>
-                    <div class="cls"></div>
-                </div>
-                <div class="top-line"></div>
-                <div class="top-10">
-        
-                </div>
-                <div class="cls"></div>
-            </div>
-        </div>
-    
-
-          
-            <div id="info-main-block"><h1>Кейсы с деньгами</h1><p><b>Открытие кейсов с деньгами бесплатно</b>  Каждый кейс имеет определенную ценность и стоимость. Проект OliCash онлайн игра на деньги. Вы можете выбрать подходящий вам кейс и испытать удачу! Обычно кейсы с деньгами содержат несколько призов, один из которых в обязательном порядке выпадает после старта игры. Выпавший приз может иметь ценность как выше поставленной вами так и ниже. Вы получаете свой выигрыш моментально на баланс системы. Мы разработали доказуемо честную игру, которая натянет ваши нервы в струну, но которая даст вам шанс неслыханно разбогатеть. Стань богатым и говори девчонкам, что ты один из первопроходцев этой игры. Они будут впечатлены. <a href="index.html" title="кейсы с деньгами">кейсы с деньгами</a> всесте с нами.</p></div>
-
-       	  <script>
-		$(document).ready(function(){
-			var html_json;
-			$.ajax({
-				url: "info-main",
-				cache: false,
-				success: function(html){
-					html_json = JSON.parse(html);
-
-					document.getElementById('info-main-block').style.display = html_json.infomainblock;
-
-					$(".price .priceinfo").each(function() {
-					    $(this).text(html_json.price);
-					});
-					$(".payed .center .payedinfo").each(function() {
-					    $(this).text(html_json.payed + $(this).text());
-					});
-					$(".case-footer .continfo").each(function() {
-					    $(this).text(html_json.continfo);
-					});
-
-				}
-			});
-		});
-	  </script>
-          
-
-
-          
-          
-
-
-
-<footer class="footer">
+ <footer class="footer">
             <div class="inner">
                 <div class="l">
                   <ul>
-                      <li><a href="index.html" class="eas ">Кейсы</a></li>
-                      <li><a href="../faq.html" class="eas ">FAQ</a></li>
-                      <li><a href="../guaranties.html" class="eas ">Гарантии</a></li>
+                      <li><a href="http://casemoney.one/" class="eas ">Кейсы</a></li>
+                      <li><a href="http://casemoney.one/faq.html" class="eas ">FAQ</a></li>
+                      <li><a href="http://casemoney.one/guaranties.html" class="eas ">Гарантии</a></li>
                       <li><a href="https://vk.com/topic-135338322_35108367" class="eas ">Отзывы</a></li>
-                      <li><a href="../support.html" class="eas active">Техническая поддержка</a></li>
+                      <li><a href="http://casemoney.one/support.html" class="eas">Техническая поддержка</a></li>
                   </ul>
                    <div class="copy">
-Copyright © 2016 OliCash.com. Все права защищены.<br>Авторизуясь на сайте вы принимаете <a href="../tos.html">пользовательское соглашение</a>
+Copyright © 2016 CaseMoney.one. Все права защищены.<br>Авторизуясь на сайте вы принимаете <a href="http://casemoney.one/tos">пользовательское соглашение</a>
 </div>
                 </div>
                 <div class="r">
                     <p class="head-h5">Принимаем</p>
                     <div class="cls"></div>
-                    <div class="img"><img src="../assets/images/payment-methods.png"></div>
+                    <div class="img"><img src="./index_files/payment-methods.png"></div>
                     <div class="wm-box">
                         <!-- begin WebMoney Transfer : accept label -->
-                        <a href="http://www.megastock.ru/" target="_blank"><img src="../assets/images/payment-wm-logo.png" class="wm wm-1" /></a>
+                        <a href="http://www.megastock.ru/" target="_blank"><img src="./index_files/payment-wm-logo.png" class="wm wm-1"></a>
                         <!-- end WebMoney Transfer : accept label -->
                         <!-- begin WebMoney Transfer : attestation label -->
-                        <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=" target="_blank"><img src="../assets/images/payment-wm-attestat.png" class="wm" style="position: absolute;bottom: 3px;left: -52px; width: 46px;" /></a>
+                        <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=" target="_blank"><img src="./index_files/payment-wm-attestat.png" class="wm" style="position: absolute;bottom: 3px;left: -52px; width: 46px;"></a>
                         <!-- end WebMoney Transfer : attestation label -->
-                        <a href="https://www.free-kassa.ru/"><img src="../assets/images/payment-freekassa.png"></a>
+                        <a href="https://www.free-kassa.ru/"><img src="./index_files/payment-freekassa.png"></a>
                     </div>
                     <div class="cls"></div>
                 </div>
@@ -672,9 +339,9 @@ Copyright © 2016 OliCash.com. Все права защищены.<br>Автор
     </div>
     <!-- .wrapper -->
     <div id="deposit" class="popup">
-      <form action="https://olicash.com/deposit">
+      <form action="http://casemoney.one/deposit">
         <div class="popup-container">
-            <div class="eas close" onclick="popupClose('#deposit');"><span class="flaticon-close"></span></div>
+            <div class="eas close" onclick="popupClose(&#39;#deposit&#39;);"><span class="flaticon-close"></span></div>
             <p class="head-h3">Пополнить баланс</p>
             <div class="info">Вы можете пополнить баланс напрямую через WebMoney и Яндекс Деньги.<br> Если вы хотите пополнить баланс через QIWI, Банковские карты, мобильного оператора, терминал и так далее, пожалуйста, выберите Interkassa или Free-Kassa</div>
             <p class="head-h4">Сумма</p>
@@ -689,19 +356,19 @@ Copyright © 2016 OliCash.com. Все права защищены.<br>Автор
             </div>
             <div class="cls"></div>
             <p class="head-h4">Выберите платежную систему</p>
-            <div class="cls"></div><span class="payment-method eas pm-webmoney active"><img src="../assets/images/payment-webmoney.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-yandex"><img src="../assets/images/payment-yandex.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-qiwi" onclick="changePaymentMethod('qiwi');"><img src="../assets/images/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+            <div class="cls"></div><span class="payment-method eas pm-webmoney active"><img src="./index_files/payment-webmoney.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-yandex"><img src="./index_files/payment-yandex.svg"><span class="flaticon-check"></span></span><span class="payment-method eas pm-qiwi" onclick="changePaymentMethod(&#39;qiwi&#39;);"><img src="./index_files/payment-qiwi.svg"><span class="flaticon-check"></span></span>
             <div class="cls"></div>
             
             <div class="foo"><input type="submit" class="btn orange rounded" value="Пополнить баланс" onclick="depositNow();"></div>
         </div>
-        <div class="popup-overlay" onclick="popupClose('#deposit');"></div>
+        <div class="popup-overlay" onclick="popupClose(&#39;#deposit&#39;);"></div>
     </form>
     </div>
     <div id="withdrawal" class="popup">
       <form class="form-inline" role="form" style="text-align:center;" id="withdrawform">
         <div class="popup-container">
-                <div class="loader"><img src="../assets/images/loader.svg"></div>
-                <div class="eas close" onclick="popupClose('#withdrawal');"><span class="flaticon-close"></span></div>
+                <div class="loader"><img src="./index_files/loader(1).svg"></div>
+                <div class="eas close" onclick="popupClose(&#39;#withdrawal&#39;);"><span class="flaticon-close"></span></div>
                 <p class="head-h3">Вывод средств</p>
                 <div class="info">Обработка вывода обычно осуществляется в течении часа.<br>В некоторых случаях платеж может быть обработан до 24 часов.<br>Минимальная сумма к выводу <b>100р</b></div>
                 <div class="cls"></div>
@@ -718,22 +385,22 @@ Copyright © 2016 OliCash.com. Все права защищены.<br>Автор
                 <p class="head-h4">Куда хотите вывести?</p>
                 <div class="cls"></div>
 
-                <span class="payment-method eas pm-webmoney w-d active" data-v="webmoney"><img src="../assets/images/payment-webmoney.svg"><span class="flaticon-check"></span>
+                <span class="payment-method eas pm-webmoney w-d active" data-v="webmoney"><img src="./index_files/payment-webmoney.svg"><span class="flaticon-check"></span>
                 </span>
 
-                <span class="payment-method eas pm-yandex w-d" data-v="yandex"><img src="../assets/images/payment-yandex.svg"><span class="flaticon-check"></span></span>
+                <span class="payment-method eas pm-yandex w-d" data-v="yandex"><img src="./index_files/payment-yandex.svg"><span class="flaticon-check"></span></span>
 
-                <span class="payment-method eas pm-qiwi w-d" data-v="qiwi"><img src="../assets/images/payment-qiwi.svg"><span class="flaticon-check"></span></span>
+                <span class="payment-method eas pm-qiwi w-d" data-v="qiwi"><img src="./index_files/payment-qiwi.svg"><span class="flaticon-check"></span></span>
 
                 <div class="cls"></div>
-                <div class="foo foo-2"><input type="submit" class="btn blue rounded" value="Вывести средства" ></div>
+                <div class="foo foo-2"><input type="submit" class="btn blue rounded" value="Вывести средства"></div>
            
         </div>
-        <div class="popup-overlay" onclick="popupClose('#withdrawal');"></div>
+        <div class="popup-overlay" onclick="popupClose(&#39;#withdrawal&#39;);"></div>
         </form>
     </div>
     <div class="ie-update">
-        <p>Ваш браузер устарел :(</p>Пожалуйста, <a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie' rel='nofollow' target='_blank'>скачайте новую версию</a> Internet Explorer<br><small>Однако мы рекомендуем Google Chrome, Firefox и Safari. </small></div>
+        <p>Ваш браузер устарел :(</p>Пожалуйста, <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" rel="nofollow" target="_blank">скачайте новую версию</a> Internet Explorer<br><small>Однако мы рекомендуем Google Chrome, Firefox и Safari. </small></div>
     <!--[if IE]></div><![endif]--><a class="vk-button" href="https://vk.com/olicash" rel="nofollow" target="_blank"><span class="flaticon-soc-vk"></span> Мы Вконтакте</a>
 
 <script type="text/javascript"><!--
@@ -743,7 +410,7 @@ escape(document.referrer)+((typeof(screen)=="undefined")?"":
 screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 ";"+Math.random();//--></script>
 <script>!function(e,t,d,s,a,n,c){e[a]={},e[a].date=(new Date).getTime(),n=t.createElement(d),c=t.getElementsByTagName(d)[0],n.type="text/javascript",n.async=!0,n.src=s,c.parentNode.insertBefore(n,c)}(window,document,"script","https://olicashcom.push.world/embed.js","pw"),pw.websiteId="4ed6feb40b794f38d9452b301c026204604800afde77b7fd9c62fa3ed09d9421";</script>
-</body>
 
-</html>
-    
+
+
+       </body></html>
